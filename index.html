@@ -1,0 +1,266 @@
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="https://fonts.cdnfonts.com/css/chalkduster" rel="stylesheet">
+<style>
+    @import url('https://fonts.cdnfonts.com/css/chalkduster');
+</style>
+<!-- <script src="./sm/assets/teaser-data.js"></script> -->
+
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Face Recognition</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description"
+        content="Project page for &#39;Composite Sketch+Text Queries for Retrieving Objects with Elusive Names and Complex Interactions.&#39;">
+    <!-- <link rel="icon" href="./pics/wis_logo.jpg"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Face Recognition</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description"
+        content="Project page for &#39;Composite Sketch+Text Queries for Retrieving Objects with Elusive Names and Complex Interactions.&#39;">
+
+
+      <meta charset="utf-8">
+      <meta name="description" content="Composite Sketch+Text Queries for Retrieving Objects with Elusive Names and Complex Interactions">
+       <meta name="keywords" content="sketch+text-based image retrieval, cross-modal retrieval, image retrieval, SBIR, CSTBIR;">
+      <meta name="author" content="Prajwal Gatti">
+      <title>[AAAI 2024] Composite Sketch+Text Queries for Retrieving Objects with Elusive Names and Complex Interactions</title>
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="[AAAI 2024] Composite Sketch+Text Queries for Retrieving Objects with Elusive Names and Complex Interactions" />
+      <meta name="twitter:description" content="[AAAI 2024] Composite Sketch+Text Queries for Retrieving Objects with Elusive Names and Complex Interactions" />
+      <meta name="twitter:image:alt" content="CSTBIR (AAAI 2024)" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <p class="title">Face Recognition</p>
+    <p class="author">
+        <span class="author">Akshat Jain</a>&nbsp;</span>
+        <span class="author">Dev Pandya</a>&nbsp;</span>
+        <span class="author">Devansh Panchal</a>&nbsp;</span>
+        <span class="author">Ketan Suthar</a>&nbsp;</span>
+        <span class="author">Lavangi Parihar</a>&nbsp;</span>
+        <span class="author">Chaital Ghan</a>&nbsp;</span>
+        <span class="author">Ujjwal Jain</a>&nbsp;</span>
+    </p>
+    <div class="container">
+        <table width="1000" border="0" align="center">
+            <tbody>
+                <tr>
+                    <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
+                        <div class="carousel-inner">
+                            <!-- White horse -->
+                            <div class="carousel-item active">
+                                <div>
+                                    <img class="teaser-img" src="./resources/example_markhor.png" />
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./resources/example_train.png" />
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./resources/example_bodhran.png" />
+                                </div>
+                            </div>
+
+                            <!-- <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./resources/example_pennyfarthing.png" />
+                                </div>
+                            </div> -->
+
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./resources/example_bird.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                            <div class="slider-navigation-previous">
+                                <svg viewBox="0 0 50 80" xml:space="preserve">
+                                    <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                        stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 ">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                            <div class="slider-navigation-next">
+                                <svg viewBox="0 0 50 80" xml:space="preserve">
+                                    <polyline fill="white" stroke-width=".5em" stroke-linecap="round"
+                                        stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 ">
+                                    </polyline>
+                                </svg>
+                            </div>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </tr>
+                <!-- <tr> <br /> </tr> -->
+                <tr align="center"></tr>
+            </tbody>
+        </table>
+        <div style="text-align: justify;text-justify: inter-word;">
+        <p><span class="section"><b>Abstract</b></span> </p>
+        <p> Facial identification is a crucial task in computer vision with numerous applications ranging from security systems to social media tagging. In this project, we explore the effectiveness of different feature extraction techniques, namely Local Binary Patterns (LBP), Histogram of Oriented Gradients (HoG), and Convolutional Neural Networks (CNN), for classifying facial images into predefined categories. We utilize the LFW dataset, a widely used benchmark dataset for face recognition tasks. Through comparative analysis, we evaluate the performance of each technique in terms of accuracy, computational efficiency, and robustness to variations in lighting, pose, and facial expressions. Our findings provide valuable insights into the strengths and limitations of each approach, aiding in the selection of suitable methods for specific face identification tasks. Moreover, this research contributes to the advancement of facial recognition technology, offering potential enhancements for real-world applications in security, surveillance, and personalization systems.
+        </p>
+        </div>
+        <div style="text-align: justify;text-justify: inter-word;">
+        <p><b>Keywords:</b> Local Binary Patterns (LBP) , Histogram of Oriented Gradients (HoG) , Convolutional Neural Networks (CNN) , LFW dataset
+            </p>
+        </div>
+        <p class="section">&nbsp;</p>
+
+        <p class="section"><b>The LFW dataset</b></p>
+        <div style="text-align: center">
+            <img src="./resources/intro.png" alt="" width="700px" style="margin: auto" />
+            <br><br><p>Labeled Faces in the Wild (LFW) is a database of face photographs designed for studying the problem of unconstrained face recognition. This database was created and maintained by researchers at the University of Massachusetts, Amherst (specific references are in Acknowledgments section). 13,233 images of 5,749 people were detected and centered by the Viola Jones face detector and collected from the web. 1,680 of the people pictured have two or more distinct photos in the dataset. </p>
+        </div>
+        <p class="section">&nbsp;</p>
+
+        <p class="section"><b>Face Recognition Problem</b></p>
+        <p class="section">&nbsp;</p>
+        <div style="text-align: center">
+            <img src="https://cdn-gonif.nitrocdn.com/THQcPJbuTzJiTSVPDIWAOpVBJvtrgqnR/assets/images/optimized/rev-4123e83/training.atmosera.com/wp-content/uploads/2021/11/color-lfw.png" alt="" width="700px" style="margin: auto" /><br>
+            <br><br><p>Our goal is to recognize the face of the person and identify him/her</p>
+        </div>
+        <p class="section">&nbsp;</p>
+
+   <div class="papers-list">
+    <p class="section" id="related-paper"><b>Solutions</b></p>
+    <p class="section">&nbsp;</p>
+    <p>Three different types of features are extracted from the dataset</p>
+    <ul>
+        <li>
+            <b>LBP features</b><br>
+            In face recognition, Local Binary Pattern (LBP) features describe the texture of facial regions by comparing the intensity of pixels with their neighboring pixels, encoding local patterns into binary codes. These features are effective for capturing facial texture variations and robust to changes in illumination and facial expressions, making them suitable for face recognition tasks.<br>
+        </li><br>
+        <li>
+            <b>CNN features</b><br>
+            Convolutional Neural Network (CNN) features for face recognition are hierarchical representations learned directly from facial images through the layers of the network. These features capture discriminative facial characteristics such as edges, textures, and higher-level facial structures, enabling accurate face recognition across different poses, illuminations, and expressions.<br>
+        </li><br>
+        <li>
+            <b>HOG features</b><br>
+            Histogram of Oriented Gradients (HOG) features for face recognition represent local gradient orientations and magnitudes in facial regions. By quantifying the distribution of gradient orientations within localized cells, blocks, and regions, HOG features capture the underlying facial structures and textures. These features are robust to variations in illumination and facial expressions, making them effective for face recognition tasks.
+<br>
+        </li>
+    </ul>
+    <p class="section">&nbsp;</p>
+    <p>
+        Using these given features different models are implemented by us and compared
+    </p>
+    <ul>
+        <li>
+            <b>KNN</b><br>
+            K-Nearest Neighbors (KNN) is a non-parametric supervised learning algorithm used for classification and regression tasks. It predicts the class or value of a new data point based on the majority class or average value of its 'k' nearest neighbors in the feature space.<br>
+        </li><br>
+        <li>
+            <b>SVM</b><br>
+            Support Vector Machine (SVM) is a supervised learning algorithm used for classification and regression tasks. It finds the optimal hyperplane that best separates data points into different classes, maximizing the margin between classes while minimizing classification errors.<br>
+        </li><br>
+        <li>
+            <b>ANN</b><br>
+            Artificial Neural Networks (ANNs) are computational models inspired by the structure and function of biological neural networks. They consist of interconnected nodes organized in layers, where information flows from input nodes through hidden layers to output nodes. ANNs are used for various tasks such as classification, regression, and pattern recognition, with learning achieved through training algorithms like backpropagation.<br>
+        </li><br>
+        <li>
+            <b>Random Forest</b><br>
+            Random Forest is an ensemble learning method used for classification and regression tasks. It builds multiple decision trees during training and outputs the class or average prediction of the individual trees for classification or regression, respectively. Random Forests are known for their robustness, scalability, and ability to handle high-dimensional data with noisy features.<br>
+        </li>
+    </ul>
+</div>	    
+<p class="section">&nbsp;</p>
+        <p class="section" id="paper"><b>Report</b></p>
+        <p class="section">&nbsp;</p>
+        <table width="940" border="0">
+            <tbody>
+                <tr>
+                    <td height="100"><a href="./resources/appendix.pdf" target="_blank" rel="noopener noreferrer"><img
+                                src="./resources/paper_cover.jpeg" alt="" width="140" height="167"></a></td>
+                    <td width="750">
+                        <p><b>Face Recognition</b><br>
+                            Dev Pandya, Akshat Jain, Ketan Suthar, Devansh Panchal, Chaital Ghan, Lavangi Parihar, Ujjwal Jain<br /> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p>
+        <p class="section">&nbsp;</p>
+       
+        <p class="section">&nbsp;</p>
+        <p class="section"><b>Short Talk</b></p>
+        <p class="section">&nbsp;</p>
+<centre>
+<iframe width="667" height="500" src="https://www.youtube.com/embed/M8JcMv7Rznw">
+</iframe>
+</centre>
+
+ <p class="section">&nbsp;</p>
+        <p class="section">&nbsp;</p>
+        <div class="ack">
+            <p class="section" id="ack"><b>Acknowledgment</b></p>
+            <p class="section">&nbsp;</p>
+            This work was done as a course project under the guidance and constant support of Anand Mishra Sir.
+	</div>
+        <p class="section">&nbsp;</p>
+        <div class="contact">
+            <p class="section" id="related-paper"><b>Team</b></p>
+            <ul style="list-style-type:circle;">
+                <li> Devansh Panchal  (B22CS021)</li>
+                <li> Akshat Jain  (B22CS007)</li>
+                <li> Dev Pandya  (B22AI016)</li>
+                <li> Ketan Suthar  (B22EE041)</li>
+                <li> Lavangi Parihar  (B22EE044)</li>
+                <li> Chaital Ghan  (B22CS020)</li>
+                <li> Ujjwal Jain  (B22CS057)</li>
+            </ul>
+	</div>
+        <p class="section"></p>
+
+    <!-- Footer -->
+<footer>
+    <p class="m-0 text-center">Copyright &copy; IIT Jodhpur</p>
+</footer>   
+
+</body>
+
+ <script>
+    function prompt_on(prompt_element) {
+        prompt_element.classList.add("caption-active");
+    }
+
+    function prompt_off(prompt_element) {
+        prompt_element.classList.remove("caption-active");
+    }
+
+    function toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id) {
+        let active_prompt = document.getElementById(active_prompt_id);
+        prompt_on(active_prompt);
+        for (let i = 0; i < inactive_prompt_ids.length; i++) {
+            let inactive_prompt = document.getElementById(inactive_prompt_ids[i]);
+            prompt_off(inactive_prompt);
+        }
+
+        let result = document.getElementById(result_id);
+        result.src = file_paths[active_prompt_id];
+    }
+ </script>
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
