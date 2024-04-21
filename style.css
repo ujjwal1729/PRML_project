@@ -245,5 +245,6 @@ code {
 
 .teaser-img {
     /* width: 300px !important; */
-    width: 800px !important;
+    width: 600px !important;
+	height : 350px;
 }
